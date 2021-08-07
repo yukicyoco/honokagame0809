@@ -1,0 +1,68 @@
+body {
+  background: rgb(22, 126, 196);
+  font-size: 16px;
+  color: rgb(46, 7, 7);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1 {
+color: rgb(241, 212, 79);
+text-align: center;
+font-size: 22px;
+}
+
+ main {
+  width: 300px;
+  background: rgb(248, 200, 232);
+  padding: 20px;
+  border: 4px solid hsl(332, 85%, 69%);
+  border-radius: 16px;
+  margin: 16px auto;/* 中央揃え */
+  display: flex;/* 横並べ */
+  justify-content: space-between;/*　それぞれのパネルの間をあける */
+ }
+
+.panel img {
+  width: 90px;
+  height: 110px;
+  margin-bottom: 4px;  /* 下のボタンとスペースあける*/
+}
+
+
+.stop {
+  cursor: pointer;
+  width: 90px;
+  height: 32px;
+  background: rgb(250, 70, 196);
+  box-shadow: 0 4px 0 rgb(216, 192, 196);
+  border-radius: 30px;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(245, 235, 235);
+  user-select: none;
+}
+
+#spin {
+  cursor: pointer;
+  width: 280px;
+  height: 36px;
+  background: rgb(11, 22, 184);
+  box-shadow: 0 4px 0 rgb(194, 172, 176);
+  border-radius: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(245, 235, 235);
+  user-select: none;
+  /* ボタンを中央に */
+  margin: 0 auto;
+}
+
+.unmatched {
+  opacity: 0.5;
+}
+
+/* スピンボタン押したらもう押せないように */
+.inactive {
+  opacity: 0.5;
+}
